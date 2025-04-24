@@ -1,8 +1,6 @@
 <!-- @format -->
 
-# Wagmi Integration
-
-    https://wagmi-integration.netlify.app/
+# Todo List Dapp
 
 ## Install Vite
 
@@ -13,16 +11,11 @@
 <b>Select a Variant:</b> TypeScript/Javascript
 
 ## Install Package and Run Basic Project
-
-    cd wagmi-javascript-setup
-
     npm install
 
     npm run dev
 
 ## Install Package and Run Basic Project
-
-    cd wagmi-javascript-setup
 
     npm install
 
