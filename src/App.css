@@ -1,0 +1,145 @@
+/** @format */
+
+#root {
+  /* max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center; */
+  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.connectWallet {
+  display: block;
+  padding-top: 0.6rem;
+  float: right;
+  padding-right: 20px;
+}
+
+.connectWallet w3m-button {
+  background: #0d3274;
+  border-radius: 50px;
+  box-shadow: 0 0.1px 7px 0.5px #2553a5;
+}
+
+.btn:focus-visible {
+  color: #ffffff !important;
+}
+
+/* // loader classes // */
+.mainLoader.loader {
+  color: #fff;
+  position: fixed;
+  box-sizing: border-box;
+  left: -9999px;
+  top: -9999px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: 999999;
+}
+.mainLoader.loader:after,
+.mainLoader.loader:before {
+  box-sizing: border-box;
+  display: none;
+}
+.mainLoader.loader.is-active {
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.mainLoader.loader.is-active:after,
+.mainLoader.loader.is-active:before {
+  display: block;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.mainLoader.loader[data-text]:before {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  color: currentColor;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+.mainLoader.loader[data-text=""]:before {
+  content: "Loading";
+}
+.mainLoader.loader[data-text]:not([data-text=""]):before {
+  content: attr(data-text);
+}
+.mainLoader.loader[data-text][data-blink]:before {
+  animation: blink 1s linear infinite alternate;
+}
+.mainLoader.loader-default[data-text]:before {
+  top: calc(50% - 63px);
+}
+.mainLoader.loader-default:after {
+  content: "";
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  border: 8px solid #fff;
+  border-left-color: transparent;
+  border-radius: 50%;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  animation: rotation 1s linear infinite;
+}
+.mainLoader.loader-default[data-half]:after {
+  border-right-color: transparent;
+}
+.mainLoader.loader-default[data-inverse]:after {
+  animation-direction: reverse;
+}

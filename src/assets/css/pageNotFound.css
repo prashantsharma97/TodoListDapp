@@ -1,0 +1,18 @@
+/** @format */
+
+.page-not-found p.error {
+  text-align: center;
+  font-weight: bold;
+  font-size: 4rem;
+}
+.page-not-found p.op {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  color: red;
+}
+
+.page-not-found p.msg {
+  text-align: center;
+  font-size: 2rem;
+}
